@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>zains_store</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+      <div class="container">
+        <h5>
+          <i class="bi bi-cart-plus-fill text-warning me-2"></i>
+        </h5>
+        <a class="navbar-brand" href="#">ZAINS_STORE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto me-3 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Reseller</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Hubungi Kami</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Bantuan</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control text-white me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn text-white btn-outline-warning me-md-3" type="submit">Search</button>
+          </form>
+          <div class="icon">
+            <h5>
+              <i class="bi bi-cart-fill text-white me-md-3" data-toggle="tooltip" title="Keranjang Belanja"></i>
+              <i class="bi bi-envelope-fill text-white me-md-3" data-toggle="tooltip" title="Pesan Masuk"></i>
+              <i class="bi bi-bell-fill text-white me-md-3" data-toggle="tooltip" title="Notifikasi"></i>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--TUTU NAVBAR-->
+
+    <!--ORDER LIST-->
+    <div class="row mt-5">
+      <div class="col-md-2 bg-light">
+        <ul class="list-group list-group-flush p-2 pt-4">
+          <li class="list-group-item bg-primary text-white"><i class="bi bi-list"></i>KATEGORI PRODUK</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Peralatan Elektronik</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Aksesoris Elektronik</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Fashion Pria</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Fashion Wanita</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Fashion Anak</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Otomotif</li>
+          <li class="list-group-item"><i class="bi bi-caret-right-fill"></i>Hobi & Olahraga</li>
+        </ul>
+      </div>
+      <!--TUTUP ORDERLIST-->
+
+      <!--CAROUSEL SLIDE-->
+      <div class="col-md-10">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slide/1.jpg" class="d-block w-100" alt="slide1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide/3.jpg" class="d-block w-100" alt="slide2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide/4.jpg" class="d-block w-100" alt="slide3" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!--CARD-->
+        <h4 class="text-center m-4">PRODUK TERBARU</h4>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-bs-target="#produk1" data-bs-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/card/media.jpg" class="card-img-top" alt="card1" />
+              <div class="card-body bg-light">
+                <h5 class="card-title mb-lg-1">Headphone</h5>
+                <p class="card-text mb-lg-1 mt-lg-1">Headphon ram 4gb</p>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-half text-success"></i>
+                <i class="bi bi-star text-success"></i>
+                <br />
+                <a href="#" class="btn btn-primary" data-target="#produk1" data-toggle="modal">Detail</a>
+                <a href="#" class="btn btn-danger">Rp. 300.000</a>
+              </div>
+            </div>
+          </div>
+
+          <!--ahir CARD-->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produk1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detail roduk</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <table class="table table-borderless">
+                      <tr>
+                        <th>Nama Produk</th>
+                        <td>Headphone</td>
+                      </tr>
+
+                      <tr>
+                        <th>Merk/Type</th>
+                        <td>Zain/A2</td>
+                      </tr>
+
+                      <tr>
+                        <th>Biaya Ongkir</th>
+                        <td>Standar</td>
+                      </tr>
+
+                      <tr>
+                        <th>Rating Produk</th>
+                        <td>
+                          <i class="bi bi-star-fill text-success"></i>
+                          <i class="bi bi-star-fill text-success"></i>
+                          <i class="bi bi-star-fill text-success"></i>
+                          <i class="bi bi-star-half text-success"></i>
+                          <i class="bi bi-star text-success"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Stock Produk</th>
+                        <td>120 pcs</td>
+                      </tr>
+
+                      <tr>
+                        <th>Harga</th>
+                        <td>Rp. 300.000</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kembali</button>
+                <button type="button" class="btn btn-primary">Beli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TUTUP CAROUSEL-->
+
+    <!--footer-->
+    <footer class="bg-dark text-white p-4">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>LAYNAN PELANGGAN</h5>
+          <ul>
+            <li>Pusat Bantuan</li>
+            <li>Cara Pembelian</li>
+            <li>Pengiriman</li>
+            <li>Cara Pengembalian</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>TENTANG KAMI</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa assumenda possimus voluptatum omnis, officiis facilis quasi hic aspernatur dolorem.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>MITRA KERJASAMA</h5>
+          <ul>
+            <li>Gaje</li>
+            <li>grob</li>
+            <li>JNI</li>
+            <li>POS.In</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>HUBUNGI KAMI</h5>
+          <ul>
+            <li>0877-9876-0987</li>
+            <li>zains_store@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--Penutup Footer-->
+    <div class="copyright text-center text-white bg-primary p-4">
+      <h3>Web Developed</h3>
+      <p>copyright &copy;2021</p>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
